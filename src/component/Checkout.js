@@ -11,10 +11,10 @@ const Checkout = () => {
       <li class="list-group-item d-flex justify-content-between lh-sm">
         <div>
           <h6 class="my-0">Product Name: {item.title.substring(0, 10)}...</h6>
-          <h6 class="my-1">Qty: {item.qty}</h6>
+          <h6 class="my-1">Qty: {item.qty} </h6>
           <p class="my-0">Category: {item.category}</p>
         </div>
-        <span class="text-muted">${item.price}</span>
+        <span class="text-muted">${item.price * item.qty}</span>
       </li>
     );
   };
